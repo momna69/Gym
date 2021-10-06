@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GYM</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+  <style>
+    /* CSS reset  */
+    body{
+      font-family: 'Baloo Bhai',cursive;
+      margin:0px;
+      padding:0px;
+      background-image: url('image/p.jpg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      color: white;
+    }
+    .left{
+      display: inline-block;
+      position:absolute;
+      left:60px;
+      top:20px;
+      /* border: 2px solid wheat; */
+    }
+    .left img{
+      height:75px; 
+      margin: 0px;
+      padding: 0px;
+      width: 100px;
+      filter: invert(100%);
+    }
+    .left div{
+      text-align: center;
+      line-height: -1px;
+    }
+    .mid{
+      /* for po=utting an element in the center*/
+      display: block;
+      width: 50%;
+      margin: 34px auto;
+      /* border:2px solid yellow; */
+      /* background-color: black; */
+    }
+    .right{
+      position: absolute;
+      right:34px;
+      top:43px;
+      display: inline-block;
+      /* border: 2px solid hotpink; */
+    }
+    .navbar{
+      display: inline-block;
+    }
+    .navbar li{
+      display:inline-block;
+      font-size: 17px;
+    }
+    .navbar li a{
+      color: white;
+      text-decoration: none;
+      padding: 30px 30px;
+    }
+    .navbar li a:hover{
+      text-decoration: underline;
+      color: cyan;
+    }
+    .btn{
+      font-family: 'Baloo Bhai',cursive;
+      margin: 0px 9px;
+      background-color: black;
+      color: white;
+      padding: 3px 4px;
+      border: 2px solid gray;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .btn:hover{
+      background-color: #fff;
+      color:#003300;
+    }
+    .container{
+      /* border: 2px solid red; */
+      margin: 50px 0px;
+      padding: 75px;
+      width: 33%;
+      border-radius: 2px;
+    }
+    .form-group input{
+      text-align: center;
+      display: block;
+      width: 500px;
+      padding: 10px;
+      border: 3px solid #00ff89;
+      margin: 10px auto;
+      border-radius: 5px;
+      font-family: 'Baloo Bhai',cursive;
+      font-size: 17px;
+    }
+    .container h1{
+      border: 4px solid #fff;
+      height: 64px;
+      width: 514px;
+      padding: 2px;
+      border-radius: 10px;
+      animation: flicker 3s infinite alternate;
+    }
+    .glowing {
+      font-size: 40px;
+      text-align: center;
+      animation: flicker 5s infinite alternate;
+      color: #fff;
+   }
+   @keyframes flicker {
+    from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }  
+  }
+   .container button{
+      display: block;
+      width: 105%;
+      margin:23px auto;
+    }
+  </style>
+<body>
+  <header class="header">
+    <div class="left">
+      <!-- for logo -->
+      <img src="image/logo.png" alt="">
+      <div>Fitness Center</div>
+    </div>
+    <div class="mid">
+      <!-- for navigation -->
+      <ul class="navbar">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">ACTIVITIES</a></li>
+        <li><a href="#">BMI CALCULATOR</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <!-- for searching -->
+      <button class="btn">Call Us Now</button>
+      <button class="btn">Email Us</button>
+    </div>
+  </header>
+  <div class="container">
+    <h1 class="glowing">Grab the opportunity now!</h1>
+    <form action="noaction.php">
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your gender">
+      </div>
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your Locality">
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
